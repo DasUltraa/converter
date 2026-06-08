@@ -2,17 +2,17 @@
 
 ## Supported Use
 
-Dieses Repository ist fuer eine bereinigte Demo- oder Portfolio-Version der Converter-App gedacht. Die App verarbeitet Uploads temporaer und sollte ohne dauerhafte Speicherung von Nutzerdaten betrieben werden.
+Dieses Repository ist für eine bereinigte Demo- oder Portfolio-Version der Converter-App gedacht. Die App verarbeitet Uploads temporär und sollte ohne dauerhafte Speicherung von Nutzerdaten betrieben werden.
 
 ## Secrets
 
-Committe keine `.env`-Dateien, produktiven Docker-Compose-Dateien, Caddy-Konfigurationen, Tokens, Zertifikate, privaten Schluessel, Uploads, temporaeren Dateien oder Logs.
+Committe keine `.env`-Dateien, produktiven Docker-Compose-Dateien, Caddy-Konfigurationen, Tokens, Zertifikate, privaten Schlüssel, Uploads, temporären Dateien oder Logs.
 
-`.env.example` enthaelt nur leere Beispielwerte. Echte Werte gehoeren in die lokale `.env`, CI-Secrets oder die Hosting-Umgebung.
+`.env.example` enthält nur leere Beispielwerte. Echte Werte gehören in die lokale `.env`, CI-Secrets oder die Hosting-Umgebung.
 
 ## Upload Safety
 
-Betreibe die App mit Dateigroessenlimit, temporaerem Arbeitsverzeichnis und regelmaessiger Bereinigung. Stelle sicher, dass Fehlermeldungen keine Dateiinhalte oder lokalen Pfade offenlegen.
+Betreibe die App mit Dateigrößenlimit, temporärem Arbeitsverzeichnis und regelmäßiger Bereinigung. Stelle sicher, dass Fehlermeldungen keine Dateiinhalte oder lokalen Pfade offenlegen.
 
 ## Reporting
 

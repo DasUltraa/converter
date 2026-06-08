@@ -1,13 +1,13 @@
 # GitHub Release Checklist
 
-Vor einer oeffentlichen Veroeffentlichung:
+Vor einer öffentlichen Veröffentlichung:
 
 - `.env` darf nicht getrackt sein.
-- produktive `docker-compose.yml` und Reverse-Proxy-Konfigurationen duerfen nicht getrackt sein.
-- Uploads, temporaere Dateien, Logs und Konvertierungsartefakte duerfen nicht getrackt sein.
+- produktive `docker-compose.yml` und Reverse-Proxy-Konfigurationen dürfen nicht getrackt sein.
+- Uploads, temporäre Dateien, Logs und Konvertierungsartefakte dürfen nicht getrackt sein.
 - `.env.example` muss leere Beispielwerte enthalten.
-- Upload-Limit, Temp-Verzeichnis und Fehlermeldungen manuell pruefen.
-- Nur synthetische Testdateien fuer Demos verwenden.
+- Upload-Limit, Temp-Verzeichnis und Fehlermeldungen manuell prüfen.
+- Nur neutrale Testdateien für Demos verwenden.
 
 Empfohlene Checks:
 

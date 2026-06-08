@@ -1,21 +1,21 @@
 # Kuglers Converter
 
-Kuglers Converter ist eine selbst gehostete Web-App zur Konvertierung gaengiger Datei- und Datenformate. Die App stellt eine Next.js-Oberflaeche bereit und nutzt lokale Tools sowie Node-Adapter fuer die eigentliche Umwandlung.
+Kuglers Converter ist eine selbst gehostete Web-App zur Konvertierung gängiger Datei- und Datenformate. Die App stellt eine Next.js-Oberfläche bereit und nutzt lokale Tools sowie Node-Adapter für die eigentliche Umwandlung.
 
 ## Ziel des Projekts
 
-Das Projekt zeigt, wie eine eigene Converter-App mit Upload-Begrenzung, temporaerer Verarbeitung und mehreren Format-Adaptern aufgebaut werden kann. Die oeffentliche Repository-Version ist als Demo- und Portfolio-Projekt gedacht.
+Das Projekt zeigt, wie eine eigene Converter-App mit Upload-Begrenzung, temporärer Verarbeitung und mehreren Format-Adaptern aufgebaut werden kann. Die öffentliche Repository-Version ist als Demo- und Portfolio-Projekt gedacht.
 
 ## Features
 
-- Upload- und Konvertierungsworkflow ueber eine Web-Oberflaeche
+- Upload- und Konvertierungsworkflow über eine Web-Oberfläche
 - Bildkonvertierungen mit Sharp
 - Dokumentkonvertierungen mit LibreOffice, Pandoc und Poppler
-- Audio-/Video-Unterstuetzung ueber ffmpeg
+- Audio-/Video-Unterstützung über ffmpeg
 - Archivformate mit 7z und tar
 - Entwicklerformate wie JSON, YAML, XML, TOML, CSV und Base64
 - Healthcheck-Endpunkt
-- Dockerfile mit benoetigten Systemtools
+- Dockerfile mit benötigten Systemtools
 
 ## Tech Stack
 
@@ -30,10 +30,6 @@ Das Projekt zeigt, wie eine eigene Converter-App mit Upload-Begrenzung, temporae
 - Pandoc
 - Docker
 
-## Screenshots
-
-Screenshots koennen vor der Veroeffentlichung in `docs/screenshots/` oder als GitHub-Repository-Medien ergaenzt werden.
-
 ## Lokale Installation
 
 ```bash
@@ -42,20 +38,20 @@ cp .env.example .env
 npm run dev
 ```
 
-Die Anwendung laeuft standardmaessig lokal ueber den Next.js-Entwicklungsserver.
+Die Anwendung läuft standardmäßig lokal über den Next.js-Entwicklungsserver.
 
 ## Environment Variables
 
-Siehe `.env.example`. Die Datei enthaelt nur leere Beispielwerte.
+Siehe `.env.example`. Die Datei enthält nur leere Beispielwerte.
 
 | Variable | Zweck |
 | --- | --- |
-| `NEXT_PUBLIC_APP_URL` | oeffentliche Basis-URL der App |
+| `NEXT_PUBLIC_APP_URL` | öffentliche Basis-URL der App |
 | `MAX_UPLOAD_SIZE_MB` | serverseitiges Upload-Limit |
-| `TEMP_DIR` | temporaeres Arbeitsverzeichnis |
+| `TEMP_DIR` | temporäres Arbeitsverzeichnis |
 | `NODE_ENV` | Laufzeitumgebung |
 
-Echte Werte gehoeren nicht ins Repository.
+Echte Werte gehören nicht ins Repository.
 
 ## Development-Befehle
 
@@ -82,7 +78,7 @@ cp docker-compose.example.yml docker-compose.yml
 docker compose up -d --build
 ```
 
-Produktive Compose- und Reverse-Proxy-Dateien sollten nicht veroeffentlicht werden.
+Produktive Compose- und Reverse-Proxy-Dateien sollten nicht veröffentlicht werden.
 
 ## Projektstruktur
 
@@ -93,17 +89,9 @@ src/lib/         Konverter, Validierung und Hilfsfunktionen
 public/          statische Assets
 ```
 
-## Roadmap
-
-- weitere Adapter sauber kapseln
-- Konvertierungsjobs optional in eine Queue auslagern
-- Testdateien mit synthetischen Demo-Daten ergaenzen
-- UI-Screenshots fuer GitHub dokumentieren
-- Secret-Scanning in CI ergaenzen
-
 ## Sicherheitshinweise
 
-Uploads duerfen nur temporaer verarbeitet werden. Keine Nutzerdaten, temporären Dateien, Logs, produktiven `.env`-Dateien oder Reverse-Proxy-Konfigurationen committen. Vor einer Veroeffentlichung sollten die Dateityp- und Groessenlimits nochmals manuell geprueft werden.
+Uploads dürfen nur temporär verarbeitet werden. Keine Nutzerdaten, temporären Dateien, Logs, produktiven `.env`-Dateien oder Reverse-Proxy-Konfigurationen committen. Vor einer Veröffentlichung sollten die Dateityp- und Größenlimits nochmals manuell geprüft werden.
 
 Weitere Hinweise stehen in `SECURITY.md`.
 
