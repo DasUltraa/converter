@@ -1,0 +1,18 @@
+services:
+  converter:
+    build:
+      context: .
+    image: converter:local
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NEXT_PUBLIC_APP_URL: "${NEXT_PUBLIC_APP_URL}"
+      MAX_UPLOAD_SIZE_MB: "${MAX_UPLOAD_SIZE_MB}"
+      TEMP_DIR: "${TEMP_DIR:-/tmp/converter}"
+      NODE_ENV: "${NODE_ENV:-production}"
+      HOSTNAME: "0.0.0.0"
+    ports:
+      - "3000:3000"
+    tmpfs:
+      - /tmp/converter:size=512m,mode=1770,uid=1001,gid=1001

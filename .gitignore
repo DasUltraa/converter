@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
+coverage/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# Local production/deployment config
+docker-compose.yml
+docker-compose.*.yml
+!docker-compose.example.yml
+deploy/
+Caddyfile*
+
+# Temporary data and logs
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql
+uploads/
+tmp/
+
+# Tooling
+tsconfig.tsbuildinfo
+.DS_Store
+.agents/
+.codex/
